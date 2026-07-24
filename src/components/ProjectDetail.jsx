@@ -34,15 +34,34 @@ export const ProjectDetail = ({ project, onBack, onNext, onPrev }) => {
             </p>
           </div>
           <div className="md:w-1/3 flex flex-col gap-4">
-            <div className="aspect-square bg-white border-4 border-[#081B3A] p-4 flex items-center justify-center relative overflow-hidden shadow-[6px_6px_0px_#2E6DFF]">
-              <HazardStripes className="absolute top-0 left-0 w-full" />
-              <WireGridBox size={120} className="animate-spin-slow" />
-              <HazardStripes className="absolute bottom-0 left-0 w-full" />
-            </div>
-            <a href={project.link} target="_blank" rel="noreferrer" className="w-full text-center px-6 py-3 font-bold text-white bg-[#2E6DFF] border-2 border-[#081B3A] shadow-[4px_4px_0px_#081B3A] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#081B3A] transition-all uppercase flex items-center justify-center gap-2">
-              <ExternalLink size={18} /> Deploy / Repo
-            </a>
-          </div>
+  <div className="aspect-square bg-white border-4 border-[#081B3A] p-2 flex items-center justify-center relative overflow-hidden shadow-[6px_6px_0px_#2E6DFF]">
+    <HazardStripes className="absolute top-0 left-0 w-full z-10" />
+    
+    {/* Conditional Media Rendering */}
+    {project.video ? (
+      <video 
+        src={project.video} 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="w-full h-full object-cover"
+      />
+    ) : (
+      <img 
+        src={project.img || "/placeholder.png"} 
+        alt={project.title || "Project preview"} 
+        className="w-full h-full object-cover"
+      />
+    )}
+
+    <HazardStripes className="absolute bottom-0 left-0 w-full z-10" />
+  </div>
+  
+  <a href={project.link} target="_blank" rel="noreferrer" className="w-full text-center px-6 py-3 font-bold text-white bg-[#2E6DFF] border-2 border-[#081B3A] shadow-[4px_4px_0px_#081B3A] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_#081B3A] transition-all uppercase flex items-center justify-center gap-2">
+    <ExternalLink size={18} /> Deploy / Repo
+  </a>
+</div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
