@@ -39,6 +39,16 @@ export const Angel = ({ className = "", size = 60 }) => (
   />
 );
 
+export const SR71 = ({ className = "", size = 60 }) => (
+  <img 
+    src="/cybercore_sr71.png" 
+    alt="Icon" 
+    width={size} 
+    height={size} 
+    className={`object-contain ${className}`} 
+  />
+);
+
 export const Random_Asset = ({ className = "", size = 60 }) => (
   <img 
     src="/random_vector.png" 

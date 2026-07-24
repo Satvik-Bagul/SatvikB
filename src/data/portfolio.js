@@ -49,7 +49,19 @@ export const PROJECTS = [
   }
 ];
 
-export const SKILLS = [ "Python", "SQL", "React", "FastAPI", "MongoDB", "Git", "Machine Learning", "HTML/CSS", "TouchDesigner", "Java" ];
+export const CERTIFICATIONS = [
+  { title: "Cert 1", pdf: "/certs/cert1.pdf" },
+  { title: "Cert 2", pdf: "/certs/cert2.pdf" },
+  { title: "Cert 3", pdf: "/certs/cert3.pdf" },
+  { title: "Cert 4", pdf: "/certs/cert4.pdf" },
+  { title: "Cert 5", pdf: "/certs/cert5.pdf" },
+  { title: "Cert 6", pdf: "/certs/cert6.pdf" }, 
+  { title: "Cert 7", pdf: "/certs/cert7.pdf" },
+  { title: "Cert 8", pdf: "/certs/cert8.pdf" },
+  { title: "Cert 9", pdf: "/certs/cert9.pdf" },
+  { title: "Cert 10", pdf: "/certs/cert10.pdf" }
+  
+];
 
 export const EXPERIENCE = [
   { id: 5, role: "Vice-Captain Jupiter House", org: "Our Own High School", desc: "Led the Jupiter House team in inter-house competitions, fostering teamwork and school spirit.", year: "2023 - 2024" },

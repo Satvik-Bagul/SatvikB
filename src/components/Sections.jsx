@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight, FileText, ExternalLink, Download, Maximize2 } from 'lucide-react';
-import { HazardStripes, CrosshairTarget, GeometricBurst, WireGridBox, GlitchText, GithubIcon, LinkedinIcon, Rubic, Random_Asset, Gundam, Angel } from './CyberAssets';
+import { HazardStripes, CrosshairTarget, GeometricBurst, WireGridBox, GlitchText, GithubIcon, LinkedinIcon, Rubic, Random_Asset, Gundam, Angel, SR71 } from './CyberAssets';
 import { InteractiveCard } from './InteractiveCard';
-import { PROJECTS, SKILLS, EXPERIENCE } from '../data/portfolio';
+import { PROJECTS, CERTIFICATIONS, EXPERIENCE } from '../data/portfolio';
 
 const SectionHeader = ({ title, code }) => (
   <div className="mb-12 border-b-4 border-[#081B3A] pb-2 flex justify-between items-end">
@@ -73,8 +73,8 @@ export const About = () => (
   <section id="about" className="py-20 relative z-10">
     <div className="container mx-auto px-6"> 
       <SectionHeader title="Intelligence Dossier" code="SYS.READ(ABOUT)" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
       <div className="absolute -top- 0.000005 -right-70 opacity-50 hidden md:block animate-spin-slow"><GeometricBurst size={500} /></div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
         <InteractiveCard title="OBJECTIVE.EXE">
            <h3 className="text-xl font-bold text-[#2E6DFF] mb-4 border-b-2 border-[#2E6DFF] inline-block uppercase">Current.Objective</h3>
            <p className="text-[#081B3A] leading-relaxed font-mono font-semibold">
@@ -131,20 +131,26 @@ export const ProjectsGrid = ({ onSelectProject }) => (
   </section>
 );
 
-export const Skills = () => (
-  <section id="skills" className="py-20 relative z-10">
+export const Certifications = () => (
+  <section id="certifications" className="py-20 relative z-10">
     <div className="container mx-auto px-6">
-      <SectionHeader title="Technical Arsenal" code="SYS.DUMP(SKILLS)" />
+      <SectionHeader title="Certification Array" code="SYS.DUMP(Technical_Arsenal)" />
+      <div className="absolute top-85 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none"><CrosshairTarget size={450}/></div>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-8 relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10 pointer-events-none"><CrosshairTarget size={300}/></div>
-        {SKILLS.map((skill, index) => (
-          <div key={skill} className="cyber-panel p-4 text-center font-bold text-sm uppercase text-[#081B3A] flex flex-col items-center justify-center gap-3 relative z-10">
-            <div className="w-10 h-10 border-2 border-[#081B3A] bg-[#E2E8F0] flex items-center justify-center text-[#2E6DFF] text-lg font-display">
-              {index < 9 ? `0${index+1}` : index+1}
-            </div>
-            <span className="tracking-widest">{skill}</span>
-          </div>
-        ))}
+        {CERTIFICATIONS.map((cert, index) => (
+          <a
+            key={cert.title}
+            href={cert.pdf}
+            target="_blank"
+            rel="noreferrer"
+            className="cyber-panel p-4 text-center font-bold text-sm uppercase text-[#081B3A] block hover:translate-x-[2px] hover:translate-y-[2px] transition-all cursor-pointer"
+        >
+        <div className="w-10 h-10 border-2 border-[#081B3A] bg-[#E2E8F0] flex items-center justify-center mx-auto mb-2">
+      {index < 9 ? `0${index + 1}` : index + 1}
+      </div>
+      <span className="tracking-widest">{cert.title}</span>
+      </a>
+))}
       </div>
     </div>
   </section>

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { HoloBackground, HazardStripes } from '../components/CyberAssets';
 import { Terminal } from '../components/Terminal';
 import { ProjectDetail } from '../components/ProjectDetail';
-import { Hero, About, ProjectsGrid, Skills, Experience, Contact } from '../components/Sections';
+import { Hero, About, ProjectsGrid, Certifications, Experience, Contact } from '../components/Sections';
 import { PROJECTS } from '../data/portfolio';
 
 export default function Home() {
@@ -81,7 +81,7 @@ export default function Home() {
               <Hero />
               <About />
               <ProjectsGrid onSelectProject={setSelectedProject} />
-              <Skills />
+              <Certifications />
               <Experience />
               <Contact />
             </motion.div>
