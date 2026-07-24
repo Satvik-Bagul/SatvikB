@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
-    id: 'blueprint',
-    title: 'Predictive Project Blueprint',
+    id: 'Algorithm',
+    title: 'Risk and Forecast Modeling System',
     tags: ['AI', 'Data', 'Python'],
     tech: ['Python', 'Machine Learning', 'React', 'FastAPI'],
     desc: 'An AI-driven predictive modeling environment designed to scope and structure engineering projects autonomously.',
@@ -12,7 +12,7 @@ export const PROJECTS = [
     link: 'https://devpost.com/software/hip-hop-webite'
   },
   {
-    id: 'noise',
+    id: 'Music',
     title: 'Noise',
     tags: ['Creative Tech', 'Full Stack'],
     tech: ['Ableton Live', 'TouchDesigner', 'MiDiLoop', 'Python'],
@@ -21,10 +21,11 @@ export const PROJECTS = [
     features: ['Real-time physical gesture tracking mapping to Auto Filter frequencies', 'Spatial audio interface', 'Live audio manipulation'],
     challenges: ['Engineered a custom signal processing pipeline using Math and Lag CHOPs to isolate pinch gestures.', 'Applying temporal smoothing to eliminate webcam tracking jitter.','Ensuring real-time audio processing with minimal latency for live performance.','Integrating TouchDesigner with Ableton Live via MiDiLoop for seamless audio-visual synchronization.'],
     achievements: ['Real-time 60fps audio reactive graphics', 'Integrated visual environment with Ableton Live 12 via TDAbleton'],
-    link: 'https://devpost.com/software/noise-aulg71'
+    link: 'https://devpost.com/software/noise-aulg71',
+    img: '/noise_logo.png'
   },
   {
-    id: 'serenity',
+    id: 'therapy',
     title: 'SimplySerenity',
     tags: ['Full Stack', 'AI'],
     tech: ['Java', 'HTML/CSS', 'ElevenLabs API'],
@@ -33,11 +34,12 @@ export const PROJECTS = [
     features: ['Verbal interactions using ElevenLabs', 'Google Gemini integration for empathetic reasoning', 'End-to-end encrypted journal', 'Stripe API payment solutions'],
     challenges: ['Ensuring latency for voice-to-text-to-voice pipeline remained under 800ms for natural conversation.', 'Structuring the AI prompt engineering to ensure safe, ethical empathetic responses.'],
     achievements: ['Successful integration of ElevenLabs and Stripe API to create a end-to-end, ready to deploy solution', 'Real-time conversational memory'],
-    link: 'https://simplyserenity.tech'
+    link: 'https://simplyserenity.tech',
+    img: '/serenity.png'
   },
   {
-    id: 'scraper',
-    title: 'Automated Financial Scraper',
+    id: 'analysis',
+    title: 'Equity Signal Analysis Platform',
     tags: ['Data', 'Python'],
     tech: ['Python', 'Streamlit', 'YFinance'],
     desc: 'High-frequency data extraction tool designed to aggregate and normalize unstructured market data across the web.',
@@ -45,7 +47,8 @@ export const PROJECTS = [
     features: ['Generates moving averages (buy/sell signals)', 'Calculates volatility and annualized performance', 'Data visualization using matplotlib'],
     challenges: ['Handling rate limits and dynamic DOM changes while compiling data into structured CSV/Pandas frames.'],
     achievements: ['First successful experience with Ui/UX design through Streamlit', 'Implemented a robust data extraction pipeline using YFinance and Pandas for real-time financial analysis.'],
-    link: 'https://github.com/Satvik-Bagul/Financial_Scraper_Menu'
+    link: 'https://github.com/Satvik-Bagul/Financial_Scraper_Menu',
+    img: 'equity_analysis.png'
   }
 ];
 
