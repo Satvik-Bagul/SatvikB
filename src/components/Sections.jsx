@@ -89,7 +89,7 @@ export const About = () => (
         <div className="space-y-8">
            <InteractiveCard title=" TECH_STACK.DAT">
              <ul className="space-y-4 text-[#081B3A] font-mono text-sm font-bold">
-               {['Python', 'Java', 'Framer', 'HTML', 'CSS'].map((item, i) => (
+               {['Python', 'Java', 'C++', 'Framer', 'HTML', 'CSS', 'TouchDesigner'].map((item, i) => (
                  <li key={i} className="flex items-center gap-3 border-2 border-[#081B3A] p-2 bg-white shadow-[2px_2px_0px_#2E6DFF]">
                    <div className="w-3 h-3 bg-[#2E6DFF]"/> {item}
                  </li>
