@@ -12,6 +12,19 @@ export const PROJECTS = [
     link: 'https://devpost.com/software/hip-hop-webite'
   },
   {
+    id: 'options_analysis',
+    title: 'Options Research and Analysis Engine',
+    tags: ['Data', 'Python'],
+    tech: ['Python', 'Streamlit', 'YFinance', 'Options Trading', 'Technical Analysis'],
+    desc: 'A personal project made for the visualization and analysis of options trading data, providing actionable insights for traders.',
+    longDesc: 'An implementation of concepts  from the Options Trading and Technical Analysis domain learned across the Summer of 2026 through personal research, experimentations and courses at Akuna Capital.',
+    features: ['Generates IV Smile Curves', 'Calculates various Greeks: Delta, Gamma, Theta, Vega', 'Data visualization using matplotlib', 'Calculations of theoretical option prices using Black-Scholes and Binomial models'],
+    challenges: ['Inconsistent or false theoretical option prices due to the usage of market mid as a baseline.', 'Handling the complexity of multi-dimensional options data.', 'Incorrect calculations of certain metrics due to missing data points or market anomalies.'],
+    achievements: ["Development of an actionable product based on 3 month's worth of research"],
+    link: 'https://opengine.streamlit.app/',
+    img: 'options_research.png'
+  },
+  {
     id: 'Music',
     title: 'Noise',
     tags: ['Creative Tech', 'Full Stack'],
@@ -38,7 +51,7 @@ export const PROJECTS = [
     img: '/serenity.png'
   },
   {
-    id: 'analysis',
+    id: 'equity_analysis',
     title: 'Equity Signal Analysis Platform',
     tags: ['Data', 'Python'],
     tech: ['Python', 'Streamlit', 'YFinance'],

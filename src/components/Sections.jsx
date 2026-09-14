@@ -168,7 +168,6 @@ export const Experience = () => (
               <span className="text-[#2E6DFF] text-xs mt-2 font-mono tracking-widest">SEQ_{index + 1}</span>
             </div>
             <div className="p-6 md:w-3/4 flex flex-col justify-center relative overflow-hidden">
-              <GeometricBurst size={80} className="absolute -right-10 opacity-5" />
               <h4 className="text-2xl font-bold text-[#081B3A] uppercase mb-1">{exp.role}</h4>
               <h5 className="text-[#2E6DFF] font-bold mb-4 text-sm border-b-2 border-[#E2E8F0] pb-2 inline-block uppercase">@ {exp.org}</h5>
               <p className="text-[#081B3A] text-sm font-mono leading-relaxed font-semibold">{exp.desc}</p>
