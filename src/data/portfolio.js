@@ -25,6 +25,37 @@ export const PROJECTS = [
     img: 'options_research.png'
   },
   {
+    id: 'options_ml_project',
+    title: 'Volatility Surface Intelligence Engine',
+    tags: ['Quantitative Finance', 'Machine Learning'],
+    tech: ['Python', 'Streamlit', 'Pandas', 'NumPy', 'SciPy', 'Scikit-learn', 'Plotly'],
+    desc: 'A research application for extracting implied volatility from historical SPY options data and using machine learning to model the structure of the volatility surface.',
+    longDesc: 'A quantitative research project built to explore the relationship between option characteristics and implied volatility using historical SPY option-market data. The project combines numerical implied-volatility extraction using Black-Scholes and Brent root-finding with feature engineering, chronological out-of-sample testing, and machine-learning models including Gradient Boosting and MLP Neural Networks.',
+    features: [
+        'Extracts implied volatility from historical option market prices using Brent root-finding',
+        'Builds volatility surfaces across log-moneyness and time to expiration',
+        'Trains Gradient Boosting and MLP Neural Network models to predict implied volatility',
+        'Evaluates models using MAE, RMSE, and residual analysis',
+        'Uses chronological train, validation, and test splits for out-of-sample evaluation',
+        'Measures downstream Black-Scholes pricing error from IV predictions',
+        'Processes large historical SPY option datasets stored in Parquet format',
+        'Interactive data visualization and model analysis using Streamlit and Plotly'],
+    challenges: [
+        'Extracting implied volatility across a large historical options dataset using numerical root-finding',
+        'Filtering invalid, illiquid, and unreliable market quotes before using them for model calibration',
+        'Designing chronological train, validation, and test splits to avoid leaking future information into the model',
+        'Understanding and diagnosing model errors across different regions of the volatility surface',
+        'Balancing computationally expensive numerical calculations with an interactive research interface'
+    ],
+    achievements: [
+        'Built an end-to-end quantitative research pipeline connecting historical market data, numerical methods, machine learning, and options pricing',
+        'Compared multiple machine-learning approaches for out-of-sample implied-volatility prediction',
+        'Extended the options-pricing research from individual option analysis into historical volatility-surface modeling'
+    ],
+    link: 'https://github.com/Satvik-Bagul/volatility-surface-intelligence-engine',
+    img: 'volatility_surface.png'
+  },
+  {
     id: 'Music',
     title: 'Noise',
     tags: ['Creative Tech', 'Full Stack'],
